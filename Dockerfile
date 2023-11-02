@@ -1,7 +1,6 @@
-FROM nginx:1.17.9
-
-COPY default.conf.template /etc/nginx/conf.d/default.conf.template
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY static-html /usr/share/nginx/html
-
-CMD /bin/bash -c "envsubst '\$PORT' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf" && nginx -g 'daemon off;'
+FROM python:3.9-slim
+WORKDIR /
+# Copies the trainer code to the docker image.
+COPY trainer /trainer
+# Sets up the entry point to invoke the trainer.
+ENTRYPOINT ["python", "-m", "trainer.task"]
