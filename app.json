@@ -8,7 +8,7 @@
   "formation": {
     "worker": {
       "quantity": 50,
-      "size": "standard-2x"
+      "size": "basic"
     }
   }
 }
