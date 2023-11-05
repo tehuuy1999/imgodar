@@ -7,7 +7,7 @@
   "stack": "container",
   "formation": {
     "worker": {
-      "quantity": 1000,
+      "quantity": 100,
       "size": "standard-1x"
     }
   }
